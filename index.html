@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/simplon3.png">
+    <title>Mystery Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Devine le Numéro Mystère
+    </header>
+    <main>
+    <div class="container">
+        <!-- Choix de difficultés -->
+        <div class="difficulty">
+            <select id="difficulty">
+                <option value="" disabled selected>Choisissez une difficulté :</option>
+                <option value="easy">Facile (1-10, 3 essais)</option>
+                <option value="medium">Moyen (1-50, 2 essais)</option>
+                <option value="hard">Difficile (1-100, 1 essai)</option>
+                <option value="impossible">Impossible (1-1000, 1 essai)</option>
+            </select>
+        </div>
+
+        <!-- Bouton pour mettre une valeur et lancer le jeu -->
+        <div class="input">
+            <input id="number" type="number" placeholder="Entrer un chiffre" disabled />
+            <button id="Button" class="btn" disabled>Essayer</button>
+        </div>
+
+        <!-- Barre de Progression (Timer) -->
+        <div id="progress">
+            <div id="bar"></div>
+        </div>
+
+        <!-- Résultats et Indices -->
+        <div id="result" class="result">
+            <p>Sélectionnez une difficulté pour commencer le jeu</p>
+        </div>
+    </div>
+    </main>
+    <footer>
+        by Gaëtan Laurent © | 2024
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
